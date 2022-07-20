@@ -78,13 +78,13 @@
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
-                    $("a").addClass("active-a");
+                    $(".header a").addClass("active-a");
                     $(".sublinhar-branco").addClass("sublinhar-azul")
                     $(".sublinhar-branco").removeClass("sublinhar-branco")
                 } else {
                     //remove the background property so it comes transparent again (defined in your css)
                     $(".header").removeClass("active");
-                    $("a").removeClass("active-a");
+                    $(".header a").removeClass("active-a");
                     $(".sublinhar-azul").addClass("sublinhar-branco")
                     $(".sublinhar-azul").removeClass("sublinhar-azul")
                 }
