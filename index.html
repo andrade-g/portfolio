@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://use.typekit.net/twv4fdr.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="tabs">
-            <a id="selected">Work</a>
-            <a href="./Fonts/">Fonts</a>
-            <a href="./About/">About</a>
-            <a href="./Contact/">Contact</a>
+            <a class="selected">Work</a>
+            <a class="sublinhar-branco" href="./Fonts/">Fonts</a>
+            <a class="sublinhar-branco" href="./About/">About</a>
+            <a class="sublinhar-branco" href="./Contact/">Contact</a>
         </nav>
         <div class="logo">Guilherme Andrade</div>
         <nav class="social-media">
@@ -48,8 +48,8 @@
     </header>
     <main>
         <div class="banner">
-            <h1>Hi! I'm Guilherme, a designer and creative coder.</h1>
-            <h3>Check out my work below</h3>
+            <h1 class="banner-text">Hi! I'm Guilherme, a designer and creative coder.</h1>
+            <h3 class="banner-text">Check out my work below</h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                 class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -91,4 +91,26 @@
             </div>
         </div>
     </main>
+    <script>
+        $(window).scroll(function(){
+            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        });
+
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                    $("a").addClass("active-a");
+                    $(".sublinhar-branco").addClass("sublinhar-azul")
+                    $(".sublinhar-branco").removeClass("sublinhar-branco")
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                    $("a").removeClass("active-a");
+                    $(".sublinhar-azul").addClass("sublinhar-branco")
+                    $(".sublinhar-azul").removeClass("sublinhar-azul")
+                }
+            });
+        });
+    </script>
 </body>
