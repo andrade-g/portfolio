@@ -11,15 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/twv4fdr.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="tabs">
-            <a id="selected" href="../../">Work</a>
-            <a href="../../Fonts/">Fonts</a>
-            <a href="../../About/">About</a>
-            <a href="../../Contact/">Contact</a>
+            <a class="selected" href="../../">Work</a>
+            <a class="sublinhar-branco" href="../../Fonts/">Fonts</a>
+            <a class="sublinhar-branco" href="../../About/">About</a>
+            <a class="sublinhar-branco" href="../../Contact/">Contact</a>
         </nav>
         <div class="logo">Guilherme Andrade</div>
         <nav class="social-media">
@@ -59,4 +60,26 @@
     </main>
     <a></a>
     <a></a>
+    <script>
+        $(window).scroll(function(){
+            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        });
+
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                    $("a").addClass("active-a");
+                    $(".sublinhar-branco").addClass("sublinhar-azul")
+                    $(".sublinhar-branco").removeClass("sublinhar-branco")
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                    $("a").removeClass("active-a");
+                    $(".sublinhar-azul").addClass("sublinhar-branco")
+                    $(".sublinhar-azul").removeClass("sublinhar-azul")
+                }
+            });
+        });
+    </script>
 </body>
