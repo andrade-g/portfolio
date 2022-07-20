@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/twv4fdr.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script defer src="https://unpkg.com/p5.collide2d"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="tabs">
-            <a href="../">Work</a>
-            <a href="../Fonts/">Fonts</a>
-            <a id="selected">About</a>
-            <a href="../Contact/">Contact</a>
+            <a class="sublinhar-branco" href="../">Work</a>
+            <a class="sublinhar-branco" href="../Fonts/">Fonts</a>
+            <a class="selected">About</a>
+            <a class="sublinhar-branco" href="../Contact/">Contact</a>
         </nav>
         <div class="logo">Guilherme Andrade</div>
         <nav class="social-media">
@@ -84,4 +85,26 @@
             </div>
         </div>
     </main>
+    <script>
+        $(window).scroll(function(){
+            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        });
+
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                    $("a").addClass("active-a");
+                    $(".sublinhar-branco").addClass("sublinhar-azul")
+                    $(".sublinhar-branco").removeClass("sublinhar-branco")
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                    $(".header").removeClass("active");
+                    $("a").removeClass("active-a");
+                    $(".sublinhar-azul").addClass("sublinhar-branco")
+                    $(".sublinhar-azul").removeClass("sublinhar-azul")
+                }
+            });
+        });
+    </script>
 </body>
