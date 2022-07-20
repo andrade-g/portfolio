@@ -50,7 +50,42 @@
     </header>
     <main>
         <h2>Let's work together!</h2>
-        <p>*form*</p>
+        <form
+            action={FORM_ENDPOINT}
+            onSubmit={handleSubmit}
+            method="POST"
+            target="_blank"
+            >
+            <div class="">
+                <input
+                type="text"
+                placeholder="Your name"
+                name="name"
+                class=""
+                required
+                />
+            </div>
+            <div class="">
+                <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class=""
+                required
+                />
+            </div>
+            <div class="">
+                <textarea placeholder="Your message" name="message" class="" required> </textarea>
+            </div>
+            <div class="">
+                <button
+                class=""
+                type="submit"
+                >
+                Send a message
+                </button>
+            </div>
+        </form>
     </main>
     <script>
         $(window).scroll(function(){
