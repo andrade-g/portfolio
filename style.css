@@ -155,6 +155,10 @@ main {
     align-content: center;
 }
 
+img.box{
+    margin: 0;
+}
+
 .box {
     width: min(800px, 40vw);
     height: min(600px, 30vw);
@@ -300,12 +304,14 @@ a.box:hover {
 
 .case-bg{
     background-color: var(--secondary-blue);
+    display: flex;
 }
 
 .case-content{
     background-color: #FFF;
     margin: 0 8vw;
     padding: 60px 40px;
+    max-width: 1400px;
 }
 
 .case-banner{
@@ -314,6 +320,7 @@ a.box:hover {
 
 img {
     width: calc(84vw - 80px);
+    max-width: 1400px;
     height: auto;
     margin: 5px 0;
 }
