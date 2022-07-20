@@ -50,6 +50,7 @@
     <main class="case-bg">
         <div class="case-content">
             <h3><strong>LINETIK Packaging</strong></h3>
+            <img class="case-banner" src="../../Images/mockup1.png"/>
             <p>The LINETIK desk lamp needed a sober, minimal packaging, which reinforces the product lines and the
                 positioning of Zumtobel — a leading brand in technology, that develops sustainable, human-centered
                 solutions, that aims to improve user's quality of life. This study evokes minimalism, functionalism and
@@ -57,19 +58,20 @@
                 cardboard. Without the processing to make it white, the single use of black and the absence of staples
                 or glue avoid the production of toxic waste, in addition to facilitating the recycling of the material.
             </p>
-            <img />
+            <img class="case-banner" src="../../Images/mockup_final.png" />
+            <img class="case-banner" src="../../Images/linetik_guidelines.png" />
         </div>
     </main>
     <a></a>
     <a></a>
     <script>
-        $(window).scroll(function(){
-            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        $(window).scroll(function () {
+            $(".banner-text").css("opacity", 1 - $(window).scrollTop() / 300);
         });
 
-        $(function() {
-            $(window).on("scroll", function() {
-                if($(window).scrollTop() > 50) {
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
                     $(".header a").addClass("active-a");
                     $(".sublinhar-branco").addClass("sublinhar-azul")
