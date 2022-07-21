@@ -54,8 +54,8 @@ function draw() {
     });
   } else {
     noFill();
-    circle(mouseX, mouseY, 40); // Cursor
     stroke(tone);
+    circle(mouseX, mouseY, 40); // Cursor
 
     if (hit == false) {
       vid2.loadPixels();

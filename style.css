@@ -168,19 +168,30 @@ main {
 /*------------WORK TAB------------*/
 /*--------Banner--------*/
 .banner {
-    background-color: var(--secondary-blue);
+    background-color: none;
     position: fixed;
     top: 80px;
     width: 100%;
     height: 75vh;
-    display: grid;
-    grid-template-rows: auto auto auto;
     justify-items: center;
     align-content: center;
     color: #FFF;
     text-align: center;
 }
 
+.banner-text {
+    position: fixed;
+    top: calc(80px + 22vh);
+    width: 80vw;
+}
+
+.banner-subtext {
+    position: fixed;
+    top: calc(80px + 45vh);
+    padding: 0px 10vw;
+    margin: 0;
+    width: 80vw;
+}
 
 .bi-chevron-compact-down {
     position: fixed;
@@ -333,6 +344,7 @@ a.box:hover {
 h5 {
     font-size: 0.85rem;
     font-weight: 700;
+    width: 800px;
     text-align: center;
     grid-column: 2/3;
 }
@@ -386,15 +398,29 @@ img {
 .bi-x {
     position: fixed;
     top: 85px;
-    right: calc(8vw - 50px);
+    right: max(calc((100vw - 1400px) / 2 - 50px), calc(8vw - 50px));
     z-index: 100;
 }
 
 .bi-arrow-up-short {
     position: fixed;
     bottom: 10px;
-    right: calc(8vw - 50px);
+    right: max(calc((100vw - 1400px) / 2 - 52px), calc(8vw - 52px));
     z-index: 100;
+}
+
+.bi-x:hover {
+    color: var(--main-blue);
+}
+
+.bi-arrow-up-short:hover {
+    color: var(--main-blue);
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 /*--------CONTACT-------*/
