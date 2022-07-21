@@ -7,7 +7,7 @@ class Partcls {
         this.raio = r; // Raio baseado na densidade
         this.mouseDist = 0; // Distancia do mouse
         this.vel = createVector(0, 0); // Velocidade da partícula
-        this.tone = color(90, 30, 250); // Cor do duotone
+        this.tone = color(20, 85, 230); // Cor do duotone
         this.distance = 0;
     }
     /*----Move as particulas----*/

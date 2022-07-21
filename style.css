@@ -3,9 +3,10 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    --main-blue: hsl(214, 100%, 41%);
-    --secondary-blue: hsla(214, 100%, 41%, 0.75);
+    --main-blue: rgb(20, 85, 230);
+    --secondary-blue: rgba(20, 85, 230, 0.75);
 }
+
 /*-----Banner Text------*/
 h1 {
     padding: 0px 10vw;
@@ -205,7 +206,7 @@ main {
     align-content: center;
 }
 
-img.box{
+img.box {
     margin: 0;
 }
 
@@ -329,6 +330,13 @@ a.box:hover {
     width: fit-content;
 }
 
+h5 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    grid-column: 2/3;
+}
+
 .about-text {
     width: 100vw;
     display: flex;
@@ -352,19 +360,19 @@ a.box:hover {
 
 /*--------WORK CASES-------*/
 
-.case-bg{
+.case-bg {
     background-color: var(--secondary-blue);
     display: flex;
 }
 
-.case-content{
+.case-content {
     background-color: #FFF;
     margin: 0 8vw;
     padding: 60px 40px;
     max-width: 1400px;
 }
 
-.case-banner{
+.case-banner {
     margin-top: 30px;
 }
 
@@ -387,4 +395,99 @@ img {
     bottom: 10px;
     right: calc(8vw - 50px);
     z-index: 100;
+}
+
+/*--------CONTACT-------*/
+.form-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1000px;
+    padding: 60px 40px;
+    margin: 0 8vw;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    border: none;
+    padding: 0.4rem 0.4rem;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 4px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+input:target {
+    border-color: black;
+}
+
+input.form-name {
+    width: calc(42vw - 45px);
+    max-width: 490px;
+}
+
+input.form-email {
+    width: calc(42vw - 45px);
+    max-width: 490px;
+}
+
+input.form-subject {
+    width: calc(84vw - 80px);
+    max-width: 1000px;
+}
+
+button.form-button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background-color: var(--secondary-blue);
+    color: #FFF;
+}
+
+button.form-button:hover {
+    background-color: var(--main-blue);
+}
+
+textarea {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: none;
+    padding: 0.4rem;
+    width: calc(84vw - 80px);
+    max-width: 1000px;
+    resize: none;
+    height: 200px;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 4px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.form-subject {
+    grid-column: 1/ span 2;
+}
+
+.form-message {
+    grid-column: 1/ span 2;
+}
+
+.form-btn {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
 }

@@ -50,51 +50,42 @@
     </header>
     <main>
         <h2>Let's work together!</h2>
-        <form
-            action={FORM_ENDPOINT}
-            onSubmit={handleSubmit}
-            method="POST"
-            target="_blank"
-            >
-            <div class="">
-                <input
-                type="text"
-                placeholder="Your name"
-                name="name"
-                class=""
-                required
-                />
-            </div>
-            <div class="">
-                <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                class=""
-                required
-                />
-            </div>
-            <div class="">
-                <textarea placeholder="Your message" name="message" class="" required> </textarea>
-            </div>
-            <div class="">
-                <button
-                class=""
-                type="submit"
-                >
-                Send a message
-                </button>
-            </div>
-        </form>
+        <div class="form-container">
+            <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST" target="_blank">
+                <div class="form-name">
+                    <input type="text" placeholder="Your name" name="name" class="form-name" maxlength="50" required />
+                </div>
+                <div class="form-email">
+                    <input type="email" placeholder="E-mail" name="email" class="form-email" maxlength="40" required />
+                </div>
+                <div class="form-subject">
+                    <input type="text" placeholder="Subject" name="subject" maxlength="100" class="form-subject"
+                        required />
+                </div>
+                <div class="form-message">
+                    <textarea placeholder="Your message" name="message" class="" maxlength="1500" required></textarea>
+                </div>
+                <div class="form-btn">
+                    <button class="form-button" type="submit">
+                        Send <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-send-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                        </svg>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
     </main>
     <script>
-        $(window).scroll(function(){
-            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        $(window).scroll(function () {
+            $(".banner-text").css("opacity", 1 - $(window).scrollTop() / 300);
         });
 
-        $(function() {
-            $(window).on("scroll", function() {
-                if($(window).scrollTop() > 50) {
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
                     $(".header a").addClass("active-a");
                     $(".sublinhar-branco").addClass("sublinhar-azul")

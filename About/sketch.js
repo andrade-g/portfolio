@@ -27,7 +27,7 @@ function setup() {
   partcl_created = false;
   played = false;
   hit = false;
-  tone = color(90, 30, 250);
+  tone = color(20);
   vid1 = createVideo("./video-site-pt1.mp4");
   vid2 = createVideo("./video-site-pt2.mp4");
   vid1.volume(0);
