@@ -9,8 +9,8 @@
 
 /*-----Banner Text------*/
 h1 {
-    padding: 0px 10vw;
-    margin: 0;
+    margin: 0px 10vw;
+    padding: 0;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -179,17 +179,17 @@ main {
     text-align: center;
 }
 
-.banner-text {
+#bn-text {
     position: fixed;
-    top: calc(80px + 22vh);
+    top: calc(80px + 28vh);
     width: 80vw;
 }
 
-.banner-subtext {
+#bn-subtext {
     position: fixed;
-    top: calc(80px + 45vh);
-    padding: 0px 10vw;
-    margin: 0;
+    top: calc(230px + 28vh);
+    margin: 0px 10vw;
+    padding: 0;
     width: 80vw;
 }
 
@@ -275,42 +275,12 @@ a.box:hover {
 
 /*------------FONTS TAB------------*/
 .font-container {
-    border-top: 2px solid var(--secondary-blue);
-    border-bottom: 2px solid var(--secondary-blue);
-    display: grid;
-    grid-template-columns: 1fr 205px;
-    margin-top: 22vh;
-    padding: 0 20px;
-    height: 200px;
-    align-items: center;
-}
-
-.btns {
-    grid-column: 2;
-}
-
-.type-btn-container {
     display: flex;
-    color: var(--main-blue);
-    background-color: #FFF;
-    margin: 5px 0;
-    height: 40px;
-    border: 2px solid var(--main-blue);
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.bi-download {
-    margin-left: 10px;
-    align-self: flex-end;
-    padding-bottom: 11px;
-}
-
-.type-btn-container:hover {
-    cursor: pointer;
-    background-color: var(--secondary-blue);
-    color: #FFF;
+.soon {
+    align-self: center;
 }
 
 /*------------ABOUT TAB------------*/
