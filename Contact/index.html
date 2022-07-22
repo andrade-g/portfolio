@@ -51,19 +51,19 @@
     <main>
         <h2>Let's work together!</h2>
         <div class="form-container">
-            <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST" target="_blank">
+            <form action="https://public.herotofu.com/v1/a94abfa0-09cc-11ed-be50-e78da9ee852d" method="POST">
                 <div class="form-name">
-                    <input type="text" placeholder="Your name" name="name" class="form-name" maxlength="50" required />
+                    <input type="text" placeholder="Your name" id="name" name="name" class="form-name" maxlength="50" required />
                 </div>
                 <div class="form-email">
-                    <input type="email" placeholder="E-mail" name="email" class="form-email" maxlength="40" required />
+                    <input type="email" placeholder="E-mail" id="email" name="email" class="form-email" maxlength="40" required />
                 </div>
                 <div class="form-subject">
-                    <input type="text" placeholder="Subject" name="subject" maxlength="100" class="form-subject"
+                    <input type="text" placeholder="Subject" id="subject" name="subject" maxlength="100" class="form-subject"
                         required />
                 </div>
                 <div class="form-message">
-                    <textarea placeholder="Your message" name="message" class="" maxlength="1500" required></textarea>
+                    <textarea placeholder="Your message" id="message" name="message" class="" maxlength="1500" required></textarea>
                 </div>
                 <div class="form-btn">
                     <button class="form-button" type="submit">
@@ -71,7 +71,6 @@
                             class="bi bi-send-fill" viewBox="0 0 16 16">
                             <path
                                 d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                        </svg>
                         </svg>
                     </button>
                 </div>
