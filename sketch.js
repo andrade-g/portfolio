@@ -8,6 +8,7 @@ function setup() {
   frameRate(40);
   colorMode (RGB, 255, 255, 255, 100);
   tone = color(20, 85, 230);
+  rectMode(CENTER);
 }
 
 function draw() {
