@@ -26,6 +26,9 @@ function pattern() {
     for (let x = 0; x < width; x += module) {
       let i = 4 * (y * width + x);
       let num = int(random(0, 90));
+      if(dist(x, y, mouseX, mouseY) < 150){
+        num = 4;
+      }
 
       if (num == 0) {
         noStroke();
