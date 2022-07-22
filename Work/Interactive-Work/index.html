@@ -49,14 +49,10 @@
     </header>
     <main class="case-bg">
         <div class="case-content">
-            <h3><strong>Milka Mix Packaging</strong></h3>
-            <img class="case-banner" src="../../Images/milka2.png" />
-            <p>This packaging study for assorted chocolates uses the strength and uniqueness of the Milka brand, by partially presenting Lila (the mascot) in the front side of the product. The main objective was to design something that would differentiate this package from the other products of the brand, but remaining with it's well stabilished visual standards. It would be a commemorative version, which allows a bit of change in the language: a bit of mystery and humour. The design seeks to reinforce the slogan “Tenderness is inside” and to provoke the the consumer's imagination with Lila's placement.
-            </p>
-            <img class="case-banner" src="../../Images/milka1.png" />
-            <img class="case-banner" src="../../Images/milka3.png" />
-            <img class="case-banner" src="../../Images/milka4.png" />
-            <img class="case-banner" src="../../Images/milka_guidelines.png" />
+            <h3><strong>Interactive Work</strong></h3>
+            <p>These designs are hosted at the Open Processing website, they are made using p5.js. The instructions are on the left and the code is on the right. </p>
+            <p>Click the <strong>play</strong> button to preview. Also feel free to play around with the code!</p>
+            <iframe src="https://openprocessing.org/sketch/1617702/embed/" class="case-banner"></iframe>
         </div>
     </main>
     <a href="../../">
@@ -74,13 +70,13 @@
         </svg>
     </a>
     <script>
-        $(window).scroll(function () {
-            $(".banner-text").css("opacity", 1 - $(window).scrollTop() / 300);
+        $(window).scroll(function(){
+            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
         });
 
-        $(function () {
-            $(window).on("scroll", function () {
-                if ($(window).scrollTop() > 50) {
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
                     $(".header a").addClass("active-a");
                     $(".sublinhar-branco").addClass("sublinhar-azul")
