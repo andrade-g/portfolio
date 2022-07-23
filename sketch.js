@@ -1,4 +1,4 @@
-const module = 12;
+let module;
 let tone;
 
 function setup() {
@@ -13,6 +13,9 @@ function setup() {
 
 function draw() {
   background(80, 135, 255);
+  if (windowWidth > 950) {
+    module = 12;
+  } else {module = 10}
   pattern();
   noLoop();
 }
