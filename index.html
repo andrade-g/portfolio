@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/twv4fdr.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
 </head>
@@ -61,49 +62,49 @@
         </div>
         <div class="works">
             <div class="work-image-grid">
-                <img class="box" id="pos1" src="./Images/minikin-banner.png">
-                <a class="box" id="pos1" href="./Work/Minikin/">
+                <img class="box pos1" src="./Images/minikin-banner.png" href="./Work/Minikin/">
+                <a class="box pos1" href="./Work/Minikin/">
                     <h4> MINIKIN FONT </h4>
                 </a>
-                <img class="box" id="pos2" src="./Images/azulejo.png">
-                <a class="box" id="pos2" href="./Work/Interactive-Work/">
+                <img class="box pos2" src="./Images/azulejo.png">
+                <a class="box pos2" href="./Work/Interactive-Work/">
                     <h4>INTERACTIVE WORK</h4>
                 </a>
-                <img class="box" id="pos3" src="./Images/semana-europa-capa.png">
-                <a class="box" id="pos3" href="./Work/Semana-da-Europa/">
+                <img class="box pos3" src="./Images/semana-europa-capa.png">
+                <a class="box pos3" href="./Work/Semana-da-Europa/">
                     <h4>SEMANA DA EUROPA</h4>
                 </a>
-                <img class="box" id="pos4" src="./Images/amis_app_capa.png">
-                <a class="box" id="pos4" href="./Work/Amis/">
+                <img class="box pos4" src="./Images/amis_app_capa.png">
+                <a class="box pos4" href="./Work/Amis/">
                     <h4>AMIS APP</h4>
                 </a>
-                <img class="box" id="pos5" src="./Images/embalagem_kapto.jpg">
-                <a class="box" id="pos5" href="./Work/Kapto/">
+                <img class="box pos5" src="./Images/embalagem_kapto.jpg">
+                <a class="box pos5" href="./Work/Kapto/">
                     <h4>KAPTO</h4>
                 </a>
-                <img class="box" id="pos6" src="./Images/mf_spread1.png">
-                <a class="box" id="pos6" href="./Work/Malika-Catalog/">
+                <img class="box pos6" src="./Images/mf_spread1.png">
+                <a class="box pos6" href="./Work/Malika-Catalog/">
                     <h4>MALIKA CATALOG</h4>
                 </a>
-                <img class="box" id="pos7" src="./Images/milka1.png">
-                <a class="box" id="pos7" href="./Work/Milka-Mix/">
+                <img class="box pos7" src="./Images/milka1.png">
+                <a class="box pos7" href="./Work/Milka-Mix/">
                     <h4>MILKA MIX</h4>
                 </a>
-                <img class="box" id="pos8" src="./Images/mockup_final.png">
-                <a class="box" id="pos8" href="./Work/Linetik/">
+                <img class="box pos8" src="./Images/mockup_final.png">
+                <a class="box pos8" href="./Work/Linetik/">
                     <h4>LINETIK</h4>
                 </a>
             </div>
         </div>
     </main>
     <script>
-        $(window).scroll(function(){
-            $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
+        $(window).scroll(function () {
+            $(".banner-text").css("opacity", 1 - $(window).scrollTop() / 300);
         });
 
-        $(function() {
-            $(window).on("scroll", function() {
-                if($(window).scrollTop() > 50) {
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
                     $(".header a").addClass("active-a");
                     $(".sublinhar-branco").addClass("sublinhar-azul")
