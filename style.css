@@ -186,6 +186,7 @@ fazer ficar em baixo
     position: relative;
     display: inline-block;
 }
+
 /*-------
 
 
@@ -345,6 +346,7 @@ h4.soon {
 img.soon {
     width: 100vw;
 }
+
 .soon {
     align-self: center;
 }
@@ -564,6 +566,7 @@ textarea {
 }
 
 @media only screen and (min-width: 951px) {
+
     /*-------HEADER------*/
     .dropdown {
         display: none;
@@ -575,20 +578,25 @@ textarea {
     h1 {
         font-size: 2.2rem;
     }
+
     h2 {
         font-size: 1.8rem;
     }
+
     h3 {
         font-size: 1.2rem;
     }
+
     h4 {
         font-size: 1rem;
         margin: 1rem 0;
         width: 80vw;
     }
+
     p {
         font-size: 0.8rem;
     }
+
     /*-------HEADER------*/
     .tabs {
         display: none;
@@ -601,6 +609,7 @@ textarea {
     header {
         grid-template-columns: 1fr auto 1fr;
     }
+
     .logo {
         font-size: 1.1rem;
     }
@@ -626,14 +635,14 @@ textarea {
         width: calc(80vw + 10px);
         padding: 0 calc(10vw - 5px);
     }
-    
-    
+
+
     .box {
         width: 80vw;
         height: 60vw;
         border-radius: 16px 16px 0 0;
     }
-    
+
     a.box {
         justify-content: center;
         display: grid;
@@ -646,13 +655,13 @@ textarea {
     a.box:hover {
         cursor: pointer;
     }
-    
+
     img.box {
         margin: 0;
         z-index: 90;
         align-self: flex-start;
     }
-    
+
     div.box {
         align-self: flex-start;
         height: calc(60vw + 54px);
@@ -661,21 +670,23 @@ textarea {
         align-items: flex-end;
         border-radius: 16px;
     }
-    
+
     div.box:hover {
         background-color: var(--secondary-blue);
         cursor: pointer;
         z-index: 90;
     }
+
     /*------------FONTS-----------*/
     h4.soon {
         font-size: 1.2rem;
     }
+
     /*------------CONTACT------------*/
     .form-name {
         grid-column: 1/ span 2;
     }
-    
+
     .form-email {
         grid-column: 1/ span 2;
     }
@@ -684,7 +695,7 @@ textarea {
         width: calc(84vw - 80px);
         max-width: 1000px;
     }
-    
+
     input.form-email {
         width: calc(84vw - 80px);
         max-width: 1000px;
@@ -712,5 +723,41 @@ textarea {
 
     .p5-instruction {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .case-content {
+        margin: 0;
+        border-radius: 0;
+    }
+    img {
+        justify-self: center;
+        width: calc(100vw - 80px)
+    }
+    .bi-x {
+        top: 80px;
+        right: 0px;
+        color: var(--secondary-blue);
+    }
+
+    .bi-arrow-up-short {
+        right: -2px;
+        color: var(--secondary-blue);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+.intro-text-container {
+    margin: 0 5vw;
+}
+
+    #pic-container {
+        width: 100vw;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .p5Canvas {
+        justify-self: center;
     }
 }
