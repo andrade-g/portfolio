@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/twv4fdr.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script defer src="https://unpkg.com/p5.collide2d"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
 </head>
 
@@ -20,9 +20,7 @@
     <header class="header">
         <nav class="tabs">
             <a class="selected">Work</a>
-            <a class="sublinhar-branco" href="./Fonts/">Fonts</a>
             <a class="sublinhar-branco" href="./About/">About</a>
-            <a class="sublinhar-branco" href="./Contact/">Contact</a>
         </nav>
         <nav class="dropdown">
             <i onclick="myFunction()" class="dropbtn fa fa-bars" aria-hidden="true"></i>
@@ -82,16 +80,12 @@
         </nav>
     </header>
     <main>
-        <div class="banner" id="p5banner">
-            <h1 class="banner-text" id="bn-text">Hi! I'm Guilherme, a designer and creative coder.</h1>
-            <h3 class="banner-text" id="bn-subtext">Check out my work below</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-                class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-            </svg>
-            <script src="./sketch.js"></script>
+        <div id="pic-container">
+                <script src="sketch.js"></script>
+                <script src="pattern.js"></script>
+                <script src="Partcls.js"></script>
         </div>
+        <h1>Hi! I'm Guilherme, a product designer and creative coder.</h1>
         <div class="works">
             <div class="work-image-grid">
                 <a class="box" href="./Work/Minikin/">

@@ -57,15 +57,8 @@ class Partcls {
     }
 
     /*----Adiciona a velocidade do mouse às partículas----*/
-    avoidMouse() {
-        this.mouseDist = dist(mouseX / 2, mouseY / 2, this.pos.x, this.pos.y);
-        if (this.mouseDist <= this.raio * 2) {
-            let repulse = createVector(this.pos.x, this.pos.y);
-            repulse.sub(mouseX / 2, mouseY / 2);
-            repulse.normalize();
-            repulse.mult(6);
-            this.vel.add(repulse);
-        }
+    explode() {
+            this.vel.add(random(-10,10), random(-10,-5));        
     }
 
     /*----Traz de volta para a posição inicial----*/
@@ -73,13 +66,13 @@ class Partcls {
         this.distance = dist(this.pos.x, this.pos.y, this.Ox, this.Oy);
         if (this.distance > 0) {
             // Quanto mais próx. de 0 for a distancia da pos original, menor será a velocidade
-            let accel = map(this.distance, 0, 20, 0, 1);
+            let accel = map(this.distance, 0, 100, 0, 2);
             let g = createVector(this.Ox, this.Oy);
             g.sub(this.pos);
             g.normalize();
             g.mult(accel);
             //console.log(accel);
             this.vel.add(g);
-        }
+        } else {}
     }
 }  
