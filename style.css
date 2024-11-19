@@ -90,8 +90,7 @@ nav {
 }
 
 .logo {
-    font-family: "DM Mono", monospace;
-    font-style: normal;
+    font-family: lores-12, sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
     text-align: center;
@@ -469,101 +468,6 @@ figcaption {
     font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
-}
-
-/*--------CONTACT-------*/
-.form-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    max-width: 1000px;
-    padding: 60px 40px;
-    margin: 0 8vw;
-}
-
-input {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9em;
-    border: none;
-    padding: 0.4rem 0.4rem;
-    border: 2px solid var(--secondary-blue);
-    border-radius: 4px;
-    display: flex;
-    box-sizing: border-box;
-}
-
-input:target {
-    border-color: black;
-}
-
-input.form-name {
-    width: calc(42vw - 45px);
-    max-width: 490px;
-}
-
-input.form-email {
-    width: calc(42vw - 45px);
-    max-width: 490px;
-}
-
-input.form-subject {
-    width: calc(84vw - 80px);
-    max-width: 1000px;
-}
-
-button.form-button {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    border: none;
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    background-color: var(--secondary-blue);
-    color: #FFF;
-}
-
-button.form-button:hover {
-    background-color: var(--main-blue);
-}
-
-textarea {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    border: none;
-    padding: 0.4rem;
-    width: calc(84vw - 80px);
-    max-width: 1000px;
-    resize: none;
-    height: 200px;
-    border: 2px solid var(--secondary-blue);
-    border-radius: 4px;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.form-subject {
-    grid-column: 1/ span 2;
-}
-
-.form-message {
-    grid-column: 1/ span 2;
-}
-
-.form-btn {
-    grid-column: 2/3;
-    display: flex;
-    justify-content: flex-end;
 }
 
 @media only screen and (min-width: 951px) {

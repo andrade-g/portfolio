@@ -1,11 +1,15 @@
 const poly = [];
-const raio = 10;
+const raio = 11;
 
 let vid1, vid2;
 let tone;
 let inplace, hit;
 let partcl = [];
 let patcl_created;
+
+function preload() {
+  vid2 = createVideo("./video-site-pt2.mp4");
+}
 
 function setup() {
   let myCanvas = createCanvas(800, 600);
@@ -17,7 +21,6 @@ function setup() {
   inplace = 0;
   hit = false;
   tone = color(20);
-  vid2 = createVideo("./video-site-pt2.mp4");
   vid2.volume(0);
   vid2.size(800, 600);
   vid2.hide();
