@@ -7,12 +7,13 @@ let inplace, hit;
 let partcl = [];
 let patcl_created;
 
-function preload() {
-  vid2 = createVideo("./video-site-pt2.mp4");
-}
+// function preload() {
+//   vid2 = createVideo("./video-site-pt2.mp4");
+// }
 
 function setup() {
   let myCanvas = createCanvas(800, 600);
+  vid2 = createVideo("./video-site-pt2.mp4");
   myCanvas.parent("pic-container");
   rectMode(CENTER);
   strokeCap(ROUND);
