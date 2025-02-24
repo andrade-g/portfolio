@@ -3,7 +3,7 @@ const raio = 11;
 
 let vid1, vid2;
 let tone;
-let inplace, hit;
+let inplace, hit, played;
 let partcl = [];
 let patcl_created;
 
@@ -20,6 +20,7 @@ function setup() {
   partcl_created = false;
   inplace = 0;
   hit = false;
+  played = false;
   tone = color(20);
   vid2.volume(0);
   vid2.size(800, 600);
@@ -30,10 +31,13 @@ function setup() {
 function draw() {
   background(255);
   if (hit == false) {
-    vid2.loadPixels();
-    vid2.loop();
+    if (played == false) {
+      vid2.loadPixels();
+      vid2.loop();
+      played == true;
+    }
     pattern(vid2);
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
       hit = true;
       vid2.stop();
       print("exploded");
