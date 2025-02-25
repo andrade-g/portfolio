@@ -7,14 +7,15 @@ let inplace, hit, played;
 let partcl = [];
 let patcl_created;
 
-// function preload() {}
+function preload() {
+  vid2 = createVideo("./video-site-pt2.mp4");
+}
 
 function setup() {
   let myCanvas = createCanvas(800, 600);
   myCanvas.parent("pic-container");
   rectMode(CENTER);
   strokeCap(ROUND);
-  vid2 = createVideo("./video-site-pt2.mp4");
 
   partcl_created = false;
   inplace = 0;
